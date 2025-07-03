@@ -1,0 +1,28 @@
+import = ["~/.config/alacritty/colorschemes/catppuccin-mocha.toml"]
+[window]
+dimensions = { columns = 100, lines = 50 }
+decorations = "None"
+# opacity = 0.9
+blur = true
+startup_mode = "Maximized"
+
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  # Ctrl+V → paste
+  { key = "V",    mods = "Control", action = "Paste" },
+  # Ctrl+Backspace → delete previous word (sends Ctrl+W)
+  { key = "Back", mods = "Control", chars  = "\u0017" },
+]
+
+
+[font]
+size = 24
+
+[font.normal]
+family = "Terminess Nerd Font"
+#family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
